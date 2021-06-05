@@ -86,7 +86,7 @@ extension _ScreenTypeExtension on _ScreenType {
       case _ScreenType.Messages:
         return InternalMessagesScreen();
       case _ScreenType.Tweets:
-        return SizedBox();
+        return InternalTweetsScreen();
     }
   }
 }
