@@ -48,6 +48,7 @@ enum _ScreenType {
   ColorPick,
   Messages,
   Tweets,
+  GMail,
 }
 
 extension _ScreenTypeExtension on _ScreenType {
@@ -61,6 +62,8 @@ extension _ScreenTypeExtension on _ScreenType {
         return 'メッセージ一覧';
       case _ScreenType.Tweets:
         return 'ツイート一覧';
+      case _ScreenType.GMail:
+        return 'メール詳細画面';
     }
   }
 
@@ -74,6 +77,8 @@ extension _ScreenTypeExtension on _ScreenType {
         return 'LINEのメッセージ一覧画面っぽいレイアウト\nListViewを使った同じ要素をリスト形式で繰り返すようなUIについて';
       case _ScreenType.Tweets:
         return 'Twitterのツイート一覧画面っぽいレイアウト\nListViewで少し複雑なUIを作る';
+      case _ScreenType.GMail:
+        return 'GMailのメール詳細画面っぽいレイアウト\nコンテンツの長さによってスクロール可能な画面について';
     }
   }
 
@@ -87,6 +92,8 @@ extension _ScreenTypeExtension on _ScreenType {
         return InternalMessagesScreen();
       case _ScreenType.Tweets:
         return InternalTweetsScreen();
+      case _ScreenType.GMail:
+        return InternalGMailScreen();
     }
   }
 }
