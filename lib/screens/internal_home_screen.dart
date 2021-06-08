@@ -47,6 +47,7 @@ enum _ScreenType {
   Login,
   ColorPick,
   Messages,
+  Recipes,
   Tweets,
   GMail,
 }
@@ -60,6 +61,8 @@ extension _ScreenTypeExtension on _ScreenType {
         return '色選択';
       case _ScreenType.Messages:
         return 'メッセージ一覧';
+      case _ScreenType.Recipes:
+        return 'レシピ一覧';
       case _ScreenType.Tweets:
         return 'ツイート一覧';
       case _ScreenType.GMail:
@@ -75,6 +78,8 @@ extension _ScreenTypeExtension on _ScreenType {
         return '好きな色を選択する画面のレイアウト\n動的なWidgetの生成とStatefulWidgetについて';
       case _ScreenType.Messages:
         return 'LINEのメッセージ一覧画面っぽいレイアウト\nListViewを使った同じ要素をリスト形式で繰り返すようなUIについて';
+      case _ScreenType.Recipes:
+        return 'クラシルのレシピ一覧画面っぽいレイアウト\nグリッドレイアウトで要素を繰り返すUIについて';
       case _ScreenType.Tweets:
         return 'Twitterのツイート一覧画面っぽいレイアウト\nListViewで少し複雑なUIを作る';
       case _ScreenType.GMail:
@@ -90,6 +95,8 @@ extension _ScreenTypeExtension on _ScreenType {
         return InternalColorPickScreen();
       case _ScreenType.Messages:
         return InternalMessagesScreen();
+      case _ScreenType.Recipes:
+        return InternalRecipesScreen();
       case _ScreenType.Tweets:
         return InternalTweetsScreen();
       case _ScreenType.GMail:

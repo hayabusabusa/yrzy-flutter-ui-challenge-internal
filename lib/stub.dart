@@ -26,6 +26,11 @@ class Stub {
     User(name: 'Kbayashi', avatarURL: 'https://avatars.githubusercontent.com/u/82300193?s=64&v=4', message: 'モンハンいつやる？', updatedDate: '4/29'),
   ];
 
+  static List<Recipe> get recipes => [
+    Recipe(name: '謎のスープ', imageURL: 'https://images.unsplash.com/photo-1620791144170-8a443bf37a33?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'),
+    Recipe(name: '山盛りのベリー類', imageURL: 'https://images.unsplash.com/photo-1571046346475-e0d889087fff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80'),
+  ];
+
   /// Twitter の画面用のツイートのデータ一覧
   static List<Tweet> get tweets => [
     Tweet(
