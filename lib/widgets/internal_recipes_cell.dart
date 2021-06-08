@@ -32,11 +32,17 @@ class InternalRecipesCell extends StatelessWidget {
               Positioned(
                 top: 0,
                 right: 0,
-                child: IconButton(
-                  color: Colors.white,
-                  onPressed: () {}, 
-                  icon: Icon(Icons.favorite_border_rounded),
-                ),
+                // NOTE: リップルエフェクトが画像の後ろに回るのに違和感を感じたので `GestureDetector` で使う.
+                child: GestureDetector(
+                  onTap: () {},
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Icon(
+                      Icons.favorite_border_rounded,
+                      color: Colors.white,
+                    ),
+                  ),
+                )
               ),
             ],
           ),

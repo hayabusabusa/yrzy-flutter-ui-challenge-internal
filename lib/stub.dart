@@ -26,9 +26,18 @@ class Stub {
     User(name: 'Kbayashi', avatarURL: 'https://avatars.githubusercontent.com/u/82300193?s=64&v=4', message: 'モンハンいつやる？', updatedDate: '4/29'),
   ];
 
+  /// レシピ一覧画面用のレシピのデータ一覧
   static List<Recipe> get recipes => [
-    Recipe(name: '謎のスープ', imageURL: 'https://images.unsplash.com/photo-1620791144170-8a443bf37a33?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'),
-    Recipe(name: '山盛りのベリー類', imageURL: 'https://images.unsplash.com/photo-1571046346475-e0d889087fff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80'),
+    Recipe(name: 'サーモンとズッキーニのコンポジット', imageURL: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80'),
+    Recipe(name: '本格的三枚的餃子', imageURL: 'https://images.unsplash.com/photo-1496116218417-1a781b1c416c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80'),
+    Recipe(name: 'サニーサイドアップの朝食トースト', imageURL: 'https://images.unsplash.com/photo-1465014925804-7b9ede58d0d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=822&q=80'),
+    Recipe(name: 'アサリとエビのパエリア', imageURL: 'https://images.unsplash.com/photo-1534080564583-6be75777b70a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80'),
+    Recipe(name: 'チョコたっぷりドーナッツ', imageURL: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'),
+    Recipe(name: '家で作る本格高菜豚骨ラーメン', imageURL: 'https://images.unsplash.com/photo-1617421753170-46511a8d73fc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=802&q=80'),
+    Recipe(name: 'タラとほうれん草のクリームグラタン', imageURL: 'https://images.unsplash.com/photo-1485921325833-c519f76c4927?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'),
+    Recipe(name: '簡単！お家で作れる本格ナチョス', imageURL: 'https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'),
+    Recipe(name: '奇跡的に縦に並んだ卵', imageURL: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80'),
+    Recipe(name: 'でかいブロッコリー', imageURL: 'https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1036&q=80'),
   ];
 
   /// Twitter の画面用のツイートのデータ一覧
