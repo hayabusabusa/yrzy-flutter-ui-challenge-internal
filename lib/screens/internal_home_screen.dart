@@ -45,6 +45,7 @@ class _Item extends StatelessWidget {
 
 enum _ScreenType {
   BasicBlock,
+  AdvancedBlock,
   Login,
   ColorPick,
   Messages,
@@ -58,6 +59,8 @@ extension _ScreenTypeExtension on _ScreenType {
     switch (this) {
       case _ScreenType.BasicBlock:
         return 'つみき画面';
+      case _ScreenType.AdvancedBlock:
+        return '難しいつみき画面';
       case _ScreenType.Login:
         return 'ログイン';
       case _ScreenType.ColorPick:
@@ -77,6 +80,8 @@ extension _ScreenTypeExtension on _ScreenType {
     switch (this) {
       case _ScreenType.BasicBlock:
         return 'RowとColumnの組み合わせの基礎練習';
+      case _ScreenType.AdvancedBlock:
+        return 'RowとColumnの組み合わせの応用練習';
       case _ScreenType.Login:
         return 'よくあるログイン画面のレイアウト\nColumnなど基本的なWidgetの使い方について';
       case _ScreenType.ColorPick:
@@ -96,6 +101,8 @@ extension _ScreenTypeExtension on _ScreenType {
     switch (this) {
       case _ScreenType.BasicBlock:
         return InternalBasicBlockScreen();
+      case _ScreenType.AdvancedBlock:
+        return InternalAdvancedBlockScreen();
       case _ScreenType.Login:
         return InternalLoginScreen();
       case _ScreenType.ColorPick:
